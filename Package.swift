@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.2
 
 import PackageDescription
 
@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "Storage", targets: ["Storage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/vapor.git", from: "3.1.0")
+        .package(name: "Vapor", url: "https://github.com/vapor/vapor.git", from: "3.3.3")
     ],
     targets: [
         .target(name: "Storage", dependencies: ["Vapor"]),
